@@ -16,4 +16,8 @@ Ready for gh-pages deploy.
    
    npm run deploy
    
+5. Add homepage to package.json
+
+   "homepage" : "https://github.com/jaybenaim/react-starter-template"
+   
 See the demo at https://github.com/jaybenaim/react-starter-template
