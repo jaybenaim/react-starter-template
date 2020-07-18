@@ -5,6 +5,9 @@ Ready for gh-pages deploy.
 1. Clone project onto your local computer.
 
    git clone https://github.com/jaybenaim/react-starter-template
+   
+2. Remove git folder and re-initialize
+   rm -rf .git;git init; git add .;git push origin master
 
 2. Install dependencies. 
 
