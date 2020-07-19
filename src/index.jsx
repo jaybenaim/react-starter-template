@@ -1,7 +1,7 @@
 ﻿import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import unregister from "./registerServiceWorker";
 import ErrorBoundary from "./components/ErrorBoundary";
 
@@ -28,11 +28,11 @@ const rrfProps = {
 ReactDOM.render(
   <Provider store={store}>
     <ReactReduxFirebaseProvider {...rrfProps}>
-      <HashRouter>
+      <BrowserRouter>
         <ErrorBoundary>
           <App />
         </ErrorBoundary>
-      </HashRouter>
+      </BrowserRouter>
     </ReactReduxFirebaseProvider>
   </Provider>,
   document.getElementById("root")
