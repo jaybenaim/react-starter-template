@@ -34,14 +34,20 @@ const NavBar = () => {
           react_starter_template
         </Link>
         <div className="navbar-nav">
-          <Link className="nav-item nav-link active" to="/home">
+          <Link to="/home" className="nav-item nav-link active">
             Home
           </Link>
           {isLoggedIn ? (
             <>
-              <Button variant={"outline-secondary"}>Account</Button>
+              <Link to="/admin" className="nav-item nav-link ">
+                Account
+              </Link>
 
-              <Button variant={"outline-secondary"} onClick={() => signOut()}>
+              <Button
+                variant={"outline-secondary"}
+                className="nav-item nav-link "
+                onClick={() => signOut()}
+              >
                 Logout
               </Button>
             </>

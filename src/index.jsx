@@ -28,7 +28,7 @@ const rrfProps = {
 ReactDOM.render(
   <Provider store={store}>
     <ReactReduxFirebaseProvider {...rrfProps}>
-      <BrowserRouter>
+      <BrowserRouter basename="react-starter-template">
         <ErrorBoundary>
           <App />
         </ErrorBoundary>
