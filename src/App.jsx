@@ -9,7 +9,6 @@ import SignIn from "./components/Auth/SignIn/SignIn";
 import SignUp from "./components/Auth/SignUp/SignUp";
 import AdminHome from "./components/Admin/AdminHome/AdminHome";
 
-//TODO Web Template Studio: Add routes for your new pages here.
 const App = () => {
   return (
     <React.Fragment>
